@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection { @apply bg-blue-200; }
+  a { @apply underline-offset-2; }
+}
+
+@layer components {
+  .card { @apply bg-white border border-neutral-200 rounded-2xl shadow-sm; }
+  .btn { @apply inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium transition; }
+  .btn-primary { @apply btn bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800; }
+  .btn-ghost { @apply btn hover:bg-neutral-100; }
+  .input { @apply border border-neutral-300 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500; }
+  .label { @apply text-sm text-neutral-600; }
+  .skeleton { @apply animate-pulse bg-neutral-200 rounded-md; }
+}
